@@ -7,8 +7,14 @@ ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  /* height: 50vh; */
 }
 
 li {
   padding: 8px;
+}
+
+li:hover{
+  border: solid 5px red;
+  border-radius: 50%;
 }
