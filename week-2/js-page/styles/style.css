@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  top: 0px;
+  left: 0px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#logo-main {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+#logo-image {
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+#logo-text {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-right: 20px;
+}
+
+li {
+  padding-right: 10px;
+}
