@@ -1,0 +1,51 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: large;
+}
+
+p {
+  font-size: 10px;
+}
+
+button {
+  width: 50%;
+  font-size: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 16px 4px 16px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4px;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 80px;
+  border: solid 1px #d3d3d3;
+  border-radius: 2px;
+}
+
+.left-box {
+  font-size: 12px;
+  border: solid 1px #d3d3d3;
+  border-radius: 4px;
+  width: 30%;
+  padding: 10px 20px 10px 20px;
+}

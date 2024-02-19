@@ -1,5 +1,9 @@
-body {
+* {
   font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  border: solid 2px red;
 }
 
 nav {
@@ -7,6 +11,9 @@ nav {
   color: white;
   top: 0px;
   left: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #nav {

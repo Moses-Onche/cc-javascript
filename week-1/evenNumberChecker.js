@@ -1,4 +1,4 @@
-const number = prompt("Type a number");
+const number = Number(prompt("Type a number"));
 let message;
 
 if (number % 2 === 0){

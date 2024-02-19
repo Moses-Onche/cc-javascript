@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2 id="element"></h2>
+
+  <script>
+    let myArray = [];
+    let element;
+
+    while (true) {
+      element = prompt("Type a number:\nType \"OK\" to stop.");
+
+      if (element === "OK" || element === "ok" || element === "Ok"){
+        break;
+      } else {
+        myArray.push(element);
+      }
+    }
+
+    function firstElement(arr){
+      return arr[0];
+    }
+
+    let answer = firstElement(myArray);
+    let message = "The first element of [" + myArray + "] is " + answer;
+
+    document.getElementById('element').innerHTML = message
+
+  </script>
+</body>
+</html>

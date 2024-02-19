@@ -1,7 +1,9 @@
-let itemCost = 320;
+let itemCost = 540;
 const moneyPaid = 1000;
-change = moneyPaid - itemCost;
+
+let change = moneyPaid - itemCost;
 
 //Display the answer
-document.write("<h3>If the item costs " + itemCost
-  + " and " + moneyPaid + " is paid, the change is " + change + "</h3>")
+document.write("<h1>" + "If the price of the item is " +
+itemCost + " and the money I paid is " + moneyPaid +
+", my change will be " + change + "</h1>")
