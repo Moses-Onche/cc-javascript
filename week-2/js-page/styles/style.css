@@ -40,7 +40,8 @@ ul {
   height: 100%;
 }
 
-li {
+#main-links {
+  display: flex;
   margin-left: 50px;
 }
 
