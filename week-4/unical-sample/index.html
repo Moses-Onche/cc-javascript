@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniCal-Sample</title>
+  <style>
+    #accordion-div {
+      display: block;
+      padding: 16px;
+      border-bottom: solid 1px black;
+    }
+    #campus-text {
+      font-size: 20px;
+    }
+    #campus-text::after{
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    .active:after {
+      content: "\2212";
+    }
+    #sub-menu {
+      display: none;
+      transition: none;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    li {
+      list-style: none;
+      width: 200px;
+      height: 90px;
+      margin: 10px;
+      border-bottom: solid 15px blue;
+      text-align: center;
+      padding-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Accordion Sample</h1>
+
+  <div id="accordion-div">
+    <span id="campus-text">Campus</span>
+  </div>
+  <div id="sub-menu">
+    <ul>
+      <li>UniCal</li>
+      <li>UniBen</li>
+      <li>UniIlorin</li>
+      <li>UniJos</li>
+      <li>UniIbadan</li>
+      <li>UniLag</li>
+      <li>UniUyo</li>
+      <li>UniMaid</li>
+    </ul>
+    <div></div>
+  </div>
+
+  <!-- Javascript section -->
+  <script>
+    let accordionButton = document.getElementById('accordion-div')
+
+    accordionButton.addEventListener('click', function (){
+      let panel = this.nextElementSibling;
+      let campus = this.children[0];
+      // console.log(campus);
+
+      if (panel.style.display === "none") {
+        panel.style.display = "flex";
+        campus.style.fontSize = "45px";
+        
+      } else {
+        panel.style.display = "none";
+        campus.style.fontSize = "20px";
+      }
+    })
+  </script>
+</body>
+</html>
