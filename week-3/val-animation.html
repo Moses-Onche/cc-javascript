@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: flex;
+      justify-content: center;
+      margin-top: 200px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+    }
+
+    #yes {
+      background-color: green;
+    }
+
+    #no {
+      background-color: red;
+    }
+
+    #reset {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button id="yes">Yes</button>
+    <button id="reset">Reset</button>
+    <button id="no">No</button>
+  </div>
+  
+  <script>
+    let yesButton = document.getElementById('yes');
+    let noButton = document.getElementById('no');
+    let resetButton = document.getElementById('reset');
+    let defaultYesWidth = 100;
+    let defaultYesHeight = 40;
+    let defaultYesTextSize = 16;
+    let defaultTextSize = 13;
+
+
+    noButton.addEventListener('click', function (){
+      yesButton.style.width = (defaultYesWidth += 10) + 'px';
+      yesButton.style.fontSize = (defaultYesTextSize += 10) + 'px'
+      yesButton.style.height = (defaultYesWidth += 4) + 'px';
+    })
+
+    yesButton.addEventListener('click', function (){
+      noButton.style.width = (defaultYesWidth += 10) + 'px';
+      noButton.style.fontSize = (defaultYesTextSize += 10) + 'px'
+      noButton.style.height = (defaultYesWidth += 4) + 'px';
+    })
+
+    resetButton.addEventListener('click', function (){
+      yesButton.style.width = defaultYesWidth + 'px';
+      yesButton.style.height = defaultYesHeight + 'px';
+      yesButton.style.fontSize = defaultTextSize + 'px';
+      noButton.style.width = defaultYesWidth + 'px';
+      noButton.style.height = defaultYesHeight + 'px';
+      noButton.style.fontSize = defaultTextSize + 'px';
+    })
+  </script>
+</body>
+</html>

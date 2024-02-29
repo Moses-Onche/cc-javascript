@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+div {
+  margin: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  font-size: larger;
+  color: white;
+}
+
+p {
+  font-size: x-large;
+  font-weight: 700;
+}
