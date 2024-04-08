@@ -29,3 +29,12 @@ alert(minutes + " minutes is equal to " + answer + " seconds.");
 // let finalMessage = "something" + " ";
 // finalMessage = finalMessage + "is better than nothing."
 // console.log(finalMessage);
+
+let age = prompt("Type in your age");
+age = Number(age);
+
+if (age >= 18 ){
+  alert("You are eligible to vote.");
+} else {
+  alert("You are too young");
+}
