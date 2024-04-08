@@ -25,3 +25,7 @@ alert(minutes + " minutes is equal to " + answer + " seconds.");
 
 // let arrayOfNumbers = [2, 4, 6, 8, 10];
 // console.log(arrayOfNumbers[0]);
+
+// let finalMessage = "something" + " ";
+// finalMessage = finalMessage + "is better than nothing."
+// console.log(finalMessage);
