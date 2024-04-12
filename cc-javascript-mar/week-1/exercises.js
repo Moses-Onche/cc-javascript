@@ -92,3 +92,12 @@ let input;
 // }
 
 // alert(numArray);
+
+// let number = 45;
+// let answer = 0;
+
+// for (let count = 1; count <= number; count++){
+//   answer = answer + count;
+// }
+
+// console.log(answer);
