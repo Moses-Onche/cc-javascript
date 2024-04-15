@@ -21,3 +21,11 @@ function increase(){
 
 console.log(increase());
 // console.log(anotherNumber);
+
+function toCelcius(temperature){
+  return (5/9) * (temperature - 32);
+}
+
+let tempValue = 212;
+let answer = "The temperature value " + tempValue + " is " + toCelcius(tempValue) + " in celcius";
+console.log(answer);

@@ -65,8 +65,15 @@
 //   alert("Your grade: D");
 // }
 
-let numArray = [];
-let input;
+for (let count = 0; count < 5; count++){
+  console.log("Hello");
+  if (count == 3){
+    break;
+  }
+}
+
+// let numArray = [];
+// let input;
 
 // for (let count = 0; count < 5; count++) {
 //   input = prompt("Type in a number:");
@@ -102,7 +109,7 @@ let input;
 
 // console.log(answer);
 
-let newArray = [3, 5, 1, 7, 1000, 9, 2, 10, 43, 4, 5, 2, 6, 10, 23, 12034];
+// let newArray = [3, 5, 1, 7, 1000, 9, 2, 10, 43, 4, 5, 2, 6, 10, 23, 12034];
 // let lowestNumber = 5;
 // let highestNumber = 0;
 
@@ -118,6 +125,6 @@ let newArray = [3, 5, 1, 7, 1000, 9, 2, 10, 43, 4, 5, 2, 6, 10, 23, 12034];
 // console.log(lowestNumber);
 // console.log(highestNumber);
 
-let arranged = newArray.sort(function(a, b){return a-b});
-console.log(arranged[0]);
-console.log(arranged[arranged.length-1]);
+// let arranged = newArray.sort(function(a, b){return a-b});
+// console.log(arranged[0]);
+// console.log(arranged[arranged.length-1]);
