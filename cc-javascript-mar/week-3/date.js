@@ -16,7 +16,16 @@
 let switcher = true;
 setInterval(() => {
   let currentDate = new Date();
-  let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+  let time;
+  if (currentDate.getSeconds() < 10){
+    time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":0" + currentDate.getSeconds();
+    if (currentDate.getMinutes() < 10){
+      time = currentDate.getHours() + ":0" + currentDate.getMinutes() + ":0" + currentDate.getSeconds();
+    }
+  } else {
+    time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+  }
+  
   // if (switcher) {
   //   document.getElementById('date').innerHTML = time.toString();
   //   switcher = false;
