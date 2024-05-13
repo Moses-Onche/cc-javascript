@@ -17,16 +17,27 @@
 //   console.log("Large")
 // }
 
-let input = Number(prompt("Type in your score:"))
+// let input = Number(prompt("Type in your score:"))
 
-if (input > 70) {
-  console.log("Grade: A")
-} else if (input > 60) {
-  console.log("Grade: B")
-} else if (input > 50) {
-  console.log("Grade: C")
-} else if (input > 40) {
-  console.log("Grade: D")
+// if (input > 70) {
+//   console.log("Grade: A")
+// } else if (input > 60) {
+//   console.log("Grade: B")
+// } else if (input > 50) {
+//   console.log("Grade: C")
+// } else if (input > 40) {
+//   console.log("Grade: D")
+// } else {
+//   console.log("Grade: E")
+// }
+
+// Classwork: Write a program that checks
+// if someone is eligible to vote or not.
+
+let input = Number(prompt("Type in your age: "))
+
+if (input < 18) {
+  console.log("You are not eligible.")
 } else {
-  console.log("Grade: E")
+  console.log("You are eligible to vote")
 }
