@@ -34,10 +34,17 @@
 // Classwork: Write a program that checks
 // if someone is eligible to vote or not.
 
-let input = Number(prompt("Type in your age: "))
+// let input = Number(prompt("Type in your age: "))
 
-if (input < 18) {
-  console.log("You are not eligible.")
-} else {
-  console.log("You are eligible to vote")
+// if (input < 18) {
+//   console.log("You are not eligible.")
+// } else {
+//   console.log("You are eligible to vote")
+// }
+
+let number = 0;
+
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
 }
