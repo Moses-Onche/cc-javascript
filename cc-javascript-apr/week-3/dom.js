@@ -14,3 +14,6 @@ firstParagraph.style.color = 'red';
 topic.innerHTML = 'Third topic';
 paragraphs[1].appendChild(topic);
 document.write('<h1>this is new content</h1>')
+heading[1].onclick = function(){
+  paragraphs[1].style.color = 'blue';
+}
