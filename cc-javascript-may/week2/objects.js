@@ -31,20 +31,26 @@ table['colorOfLegs'] = 'grey';
 table['width'] = 1.2;
 
 // console.log(table.colorOfLegs + ' ' + table.material + ' ' + table.width)
+const allObjects = {}
 
 for (item in table) {
-  console.log(table[item]);
+  // console.log(table[item]);
+  allObjects[item] = table[item];
 }
 
+// console.log(allObjects);
 console.log('\n\n')
 
 for (properties in fan) {
-  console.log(fan[properties]);
+  // console.log(fan[properties]);
+  allObjects[properties] = fan[properties];
 }
 
 console.log('\n\n')
 
 for (item in television) {
-  console.log(television[item])
+  // console.log(television[item])
+  allObjects[item] = television[item];
 }
 
+console.log(allObjects)
