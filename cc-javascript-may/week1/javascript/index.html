@@ -9,9 +9,17 @@
   </script> -->
 </head>
 <body>
-  <!-- <script>
-    alert('Body tag')
-  </script> -->
-  <script src="loops.js"></script>
+  <h1 id="display"></h1>
+  <!-- <script src="functions.js"></script> -->
+  <script>
+    function displayTime(){
+      let clock = document.getElementById('display');
+      let now = new Date();
+      clock.textContent = now.toLocaleTimeString();
+    }
+
+    displayTime();
+    setInterval(displayTime, 1000);
+  </script>
 </body>
 </html>
