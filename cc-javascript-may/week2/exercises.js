@@ -93,4 +93,38 @@ function emotify(sentence){
   console.log(newSentence);
 }
 
-emotify('Make me sad');
+// emotify('Make me sad');
+
+// Exercise: How Many Vowels
+function countVowels(string){
+  let noOfvowels = 0;
+  for (let count = 0; count < string.length; count++){
+    if (string[count] === 'a' || string[count] === 'e' || string[count] === 'i' ||
+    string[count] === 'o' || string[count] === 'u') {
+      noOfvowels++;
+      // console.log(string[count]);
+    }
+  }
+
+  return noOfvowels;
+}
+
+// console.log(countVowels('Celebration'))
+
+// Exercise: Reverse the case
+function reverseCase(string){
+  let newString = '';
+  for (let count = 0; count < string.length; count++){
+    if (string[count] === string[count].toUpperCase()){
+      newString += string[count].toLowerCase();
+    } else {
+      newString += string[count].toUpperCase();
+    }
+  }
+
+  return newString;
+}
+
+console.log(reverseCase('Happy Birthday'));
+console.log(reverseCase('MANY THANKS'));
+console.log(reverseCase('SpOnTanNeOuS'));
