@@ -1,15 +1,18 @@
-(async function(){
+// let time = document.getElementById("time");
+// let liveRate = document.getElementById('rate');
+
+async function bitPrice(){
   let url = "https://api.coindesk.com/v1/bpi/currentprice.json";
   let response = await fetch(url);
   let bitcoinInfo = await response.json();
 
-  // Get the Time
-  let date = bitcoinInfo.time.updated;
-  let hour = Number(date.slice(13, 15));
-  hour = hour % 12 + "pm";
-  document.getElementById("time").innerHTML += hour;
+  console.log(bitcoinInfo.time.updated, bitcoinInfo.bpi.USD.rate);
+};
 
-  // Get the Rate
-  let rate = bitcoinInfo.bpi.USD.rate;
-  document.getElementById('rate').innerHTML += rate;
-})();
+setInterval(bitPrice, 10000);
+// function display(){
+//   let result = bitPrice();
+//   console.log(result);
+// }
+
+// setInterval(display, 1000);
