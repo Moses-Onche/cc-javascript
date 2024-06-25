@@ -20,6 +20,8 @@ let sample = [
   }
 ]
 
+console.log(sample[2].school[0].West[2]);
+
 // console.log(sample[1].school[1]);
 // console.log(sample[2].school[0].North[1]);
 
@@ -31,4 +33,4 @@ function displayValue(){
   name.innerHTML = input[0].value;
 }
 
-displayValue();
+// displayValue();
