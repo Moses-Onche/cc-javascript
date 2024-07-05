@@ -15,7 +15,21 @@
 //   count = count + 1;
 // }
 
-while (true){
-  console.log('Infinite loop');
-}
+while (true) {
+  // INPUT
+  let number = prompt("Type in a number\nType 'close' to end the program");
+  let message = "";
 
+  if (number === 'close' || number === 'Close'){
+    break;
+  }
+  // PROCESSING
+  if (number % 2 == 0) {
+    message = "This is an even number";
+  } else {
+    message = "This is an odd number";
+  }
+
+  // OUTPUT
+  alert(message);
+}
