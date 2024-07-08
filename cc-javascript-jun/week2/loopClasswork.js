@@ -18,11 +18,32 @@
 * if it is odd of even.
 */
 
-let output = '';
-for (let i = 15; i <= 27; i++){
-  if (i % 2 === 0){
-    console.log(i + ' even');
-  } else {
-    console.log(i + ' odd')
-  }
+// let output = '';
+// for (let i = 15; i <= 27; i++){
+//   if (i % 2 === 0){
+//     console.log(i + ' even');
+//   } else {
+//     console.log(i + ' odd')
+//   }
+// }
+
+/* Classwork 3: Display the following in your console
+* 5
+* 4
+* 2
+* 1
+* Middle
+* 1
+* 2
+* 3
+* 4
+* 5
+*/
+
+for (let i = 5; i >= 1; i--){
+  console.log(i);
+}
+console.log('Middle');
+for (let i = 1; i <= 5; i++){
+  console.log(i);
 }
