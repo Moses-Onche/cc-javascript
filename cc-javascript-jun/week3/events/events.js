@@ -21,3 +21,8 @@ function displaySubscriptionBox(){
 
 // document.body.onunload = alert('Are you sure you want to leave?');
 
+let input = document.getElementsByTagName('input')[0];
+
+input.oninput = function(){
+  input.value = input.value.toUpperCase()
+};
