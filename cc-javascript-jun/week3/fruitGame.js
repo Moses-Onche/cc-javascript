@@ -14,19 +14,19 @@ alert('FruitGame!\n Click on the fruit as many times as possible.' +
 function move(){
   let num1 = Math.trunc(Math.random() * 80);
   let num2 = Math.trunc(Math.random() * 80);
-  let parameter1 = 17;
-  let parameter2 = 70;
+  // let parameter1 = 17;
+  // let parameter2 = 70;
 
-  if (num1 < parameter1){
-    num1 = parameter1;
-  } else if (num1 > parameter2){
-    num1 = parameter2;
-  }
+  // if (num1 < parameter1){
+  //   num1 = parameter1;
+  // } else if (num1 > parameter2){
+  //   num1 = parameter2;
+  // }
   
-  if (num2 < parameter1){
-    num2 = parameter1;
-  } else if (num2 > parameter2){
-    num2 = parameter2;
+  // if (num2 < parameter1){
+  //   num2 = parameter1;
+  // } else if (num2 > parameter2){
+  //   num2 = parameter2;
   }
 
   console.log(num1 + ", " + num2);
