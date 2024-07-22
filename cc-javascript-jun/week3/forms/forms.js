@@ -4,6 +4,6 @@ let submit = document.getElementsByClassName('form-container')[0].children[5].ch
 let answer = document.getElementsByClassName('form-container')[0].children[6];
 
 submit.addEventListener('click', function(){
-  console.log(firstNum.value);
-  // answer.textContent += firstNum.value + secondNum.value;
+  sum = Number(firstNum.value) + Number(secondNum.value);
+  answer.textContent = 'Answer: ' + sum;
 })
