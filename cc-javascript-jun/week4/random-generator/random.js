@@ -1,14 +1,29 @@
 let quoteText = document.getElementsByTagName("h1")[0];
 let author = document.getElementsByTagName("h2")[0];
-let button = document.getElementsByTagName("button")[1];
+let next = document.getElementsByTagName("button")[1];
+let previous = document.getElementsByTagName("button")[0];
+
+window.onload = randomQuote();
 
 async function randomQuote() {
+  // Save the previous quote in local Storage
+  sessionStorage.setItem('quote', quoteText.textContent);
+  sessionStorage.setItem('author', author.textContent);
+
+  // Query the API for a new quote
   let url = "https://api.quotable.io/random";
   let response = await fetch(url);
   let quoteContent = await response.json();
-
+  // Write the new quote to HTML
   quoteText.innerHTML = quoteContent.content;
   author.innerHTML = '- ' + quoteContent.author;
 }
 
-button.addEventListener("click", randomQuote);
+function getQuote(){
+  // Write the previous quote to HTML
+  quoteText.innerHTML = sessionStorage.getItem('quote');
+  author.innerHTML = sessionStorage.getItem('author');
+};
+
+next.addEventListener("click", randomQuote);
+previous.addEventListener('click', getQuote);
