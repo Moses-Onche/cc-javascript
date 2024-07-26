@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url('bg-img.jpg');
+}
+
+.container-add {
+  width: 40%;
+  position: relative;
+  display: none;
+  box-shadow: black;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(212, 32, 92);
+  padding: 0px 22px;
+  font-size: 22px;
+}
+
+.title i {
+  margin: 22px 0px;
+  cursor: pointer;
+}
+
+.fields {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(212, 32, 92);
+  background-color: white;
+  font-size: 20px;
+}
+
+#url-label {
+  margin-top: 18px;
+}
+
+input {
+  font-size: 22px;
+  border: solid 1px rgb(212, 32, 92);
+  border-radius: 4px;
+}
+
+.fields button {
+  width: 80px;
+  margin-top: 18px;
+  padding: 5px 20px;
+  background-color: rgb(212, 32, 92);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#bookmark {
+  font-size: 30px;
+  padding: 20px 40px;
+  background-color: rgba(52, 47, 47, 0.712);
+}
+
+#bookmark:hover {
+  background-color: rgba(13, 13, 13, 0.876);
+}
