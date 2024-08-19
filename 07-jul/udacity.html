@@ -3,30 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    div{
-      width: 30%;
-      display: flex;
-      justify-content: space-between;
-      /* border: solid; */
-    }
-
-    hr {
-      width: 150px;
-    }
-
-    span {
-      /* border: solid 1px; */
-      padding-top: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="udacity.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <title>Udacity</title>
 </head>
 <body>
-  <div>
-    <span><hr /></span>
-    <p>or</p>
-    <span><hr /></span>
+  <div class="container">
+    <div class="top">
+      <!-- <h3>SIGN UP</h3>
+      <h3>SIGN IN</h3> -->
+      <span id="sign-up">SIGN UP</span>
+      <span>SIGN IN</span>
+    </div>
+
+    <div class="content">
+      <h1>Sign into your account.</h1>
+    <p class="first-p">Build your skills today, tomorrow and beyond.</p>
+    <p class="first-p">Education to future-proof your career.</p>
+    <div class="sign">
+      <button>
+        <box-icon type='logo' name='google'></box-icon>
+        Sign in with Google
+      </button>
+      <button>
+        <box-icon name='facebook-circle' type='logo' ></box-icon>
+        <span>Sign in with Facebook</span>
+      </button>
+    </div>
+    <div>
+      <span><br /></span>
+      <p>or</p>
+      <span><br /></span>
+    </div>
+    <label for="email">Email Address</label>
+    <input type="text">
+    <label for="password">Password</label>
+    <input type="text">
+    <p>By clicking "Sign in" you agree to our <u>Terms of use</u> and our <u>Privacy policy.</u></p>
+    <button><span>Sign in</span><box-icon name='right-arrow-alt'></box-icon></button>
+    <a href="#">Forgot your Password?</a>
+    <div>
+      <span><br /></span>
+      <p>or</p>
+      <span><br /></span>
+    </div>
+    <a href="#">Sign in with your organization.</a>
+    </div>
   </div>
 </body>
 </html>
