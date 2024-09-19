@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form-val.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up.</h1>
+    <form action="">
+      <label for="first-name">First Name</label>
+      <input type="text" id="firstName">
+      <span>Names should be alphabets.</span>
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="lastName">
+      <span>Names should be alphabets.</span>
+
+      <label for="phone-number">Phone No.</label>
+      <input type="number" name="" id="phone">
+      <span>Phone numbers should be 11 digits.</span>
+
+      <label for="email">Email</label>
+      <input type="email" name="" id="email">
+      <span>Invalid email. Include an @.</span>
+
+      <label for="password">Password</label>
+      <input type="password" name="" id="password">
+      <span>Invalid password. Should not be less than 8 characters, must include
+        one uppercase letter, numbers and a special character.
+      </span>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" name="" id="confirm">
+      <span>Password does not match.</span>
+      <button>Sign Up</button>
+
+    </form>
+  </div>
+  <script src="form-val.js"></script>
+</body>
+</html>

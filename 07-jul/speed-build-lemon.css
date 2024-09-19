@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: rgb(17, 16, 16);
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+}
+
+.container {
+  margin-top: 100px;
+  width: 90%;
+  background-color: #d5ff3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 80px 80px;
+}
+
+.container h1 {
+  /* border: solid red 5px; */
+  font-weight: 900;
+  font-size: 60px;
+  width: 60%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.buttons {
+  margin: 2px 0 50px 0;
+}
+
+.buttons button {
+  background-color: black;
+  color: #d5ff3f;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.buttons button:last-child {
+  background-color: #d5ff3f;
+  color: black;
+  border: solid 2px black;
+  margin-left: 20px;
+}

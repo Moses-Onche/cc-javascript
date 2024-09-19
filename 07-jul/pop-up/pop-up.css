@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.pop-up {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  width: 70%;
+  background-color: pink;
+  padding: 40px;
+  border-radius: 10px;
+
+  display: none;
+  opacity: 0;
+  animation: animatezoom 0.6s
+  /* transition: 'opacity 4s allow-discrete'; */
+}
+
+.pop-up img {
+  float: right;
+  cursor: pointer;
+}
+
+#second {
+  background-color: darkcyan;
+  color: white;
+}
+
+#third {
+  background-color: darkslategrey;
+  color: lightblue;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 80px;
+  height: 80px;
+  margin-left: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+h1 {
+  margin-top: 70px;
+}
+

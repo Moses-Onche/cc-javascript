@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #ADF802;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  border-radius: 0 0 100px 100px;
+}
+
+.container h1 {
+  font-size: 80px;
+  /* border: solid; */
+  width: 70%;
+  text-align: center;
+}
+
+.container button {
+  background-color: black;
+  color: #ADF802;
+  font-size: 22px;
+  border-style: none;
+  padding: 20px 40px;
+  border-radius: 40px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.container button:last-child {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px black;
+  color: black;
+}

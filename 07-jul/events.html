@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning About Events</title>
+</head>
+<body>
+  <h1 onclick="this.innerHTML = 'Oops!'">Click on this text</h1>
+  <h1 onclick="changeText(this)">Another h1 element</h1>
+
+  <input type="text" id="input">
+  <h2 id="output" oninput="displayText()">Input appears here</h2>
+
+  <script>
+    function changeText(element){
+      element.innerHTML = 'This changes too!';
+      element.style.border = 'solid 1px blue';
+    }
+  </script>
+  <script src="events.js"></script>
+</body>
+</html>

@@ -6,12 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  background-color: #f6f6f6;
+  background-color: #a59f9f;
   font-family: Montserrat;
   font-size: small;
 }
 
 .container {
+  margin-top: 30px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ body {
 .content {
   margin-left: 50px;
   margin-right: 50px;
-  
+  border: solid;
 }
 
 .first-p {
@@ -36,14 +37,11 @@ body {
 
 .top {
   width: 100%;
-  /* border: solid; */
   display: flex;
-  /* text-align: center; */
   justify-content: space-around;
 }
 
 .top span {
-  /* border: solid; */
   width: 50%;
   text-align: center;
   padding-top: 10px;
@@ -51,7 +49,7 @@ body {
 }
 
 #sign-up {
-  background-color: #f6f6f6;
+  background-color: #a59f9f;
 }
 
 .sign {
