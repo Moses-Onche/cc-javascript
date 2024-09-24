@@ -12,21 +12,23 @@ body {
   min-height: 100vh;
 }
 
-#right {
+.right-side {
   width: 50%;
+  position: relative;
+}
+
+#right {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 20%;
+  position: fixed;
 }
 
 #right img {
   width: 100%;
 }
-
-/* #right div div {
-  position: ;
-} */
 
 #left {
   width: 50%;
