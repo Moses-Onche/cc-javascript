@@ -1,0 +1,44 @@
+* {
+	font-family: Inter;
+}
+
+.container {
+	width: 50%;
+	/* background-color: grey; */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	/* width: 30%; */
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	/* box-shadow: 1px 1px 10px lightgray; */
+}
+
+.item:hover {
+	box-shadow: 1px 1px 10px lightgray;
+
+}
+
+.images {
+	width: 250px;
+	height: 250px;
+}
+
+.buttons {
+	width: 100%;
+	background-color: orange;
+	color: white;
+	border-style: none;
+	padding: 10px 20px;
+	align-self: center;
+	border-radius: 4px;
+}
+
+h3, p {
+	margin-top: 1px;
+}
