@@ -2,8 +2,12 @@
 	font-family: Inter;
 }
 
+body {
+	position: relative;
+}
+
 .container {
-	width: 50%;
+	width: 70%;
 	/* background-color: grey; */
 	display: flex;
 	flex-wrap: wrap;
@@ -41,4 +45,55 @@
 
 h3, p {
 	margin-top: 1px;
+}
+
+.popup {
+	width: 60%;
+	display: flex;
+	background-color: rgb(224, 216, 216);
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	box-shadow: 1px 1px 15px gray;
+	display: none;
+}
+
+.product-image {
+	width: 50%;
+	/* border: solid; */
+}
+
+.product-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.product-details {
+	width: 50%;
+	padding: 20px;
+	/* border: solid; */
+}
+
+.product-details box-icon {
+	float: right;
+	cursor: pointer;
+}
+
+.product-details h2 {
+	margin-top: 50px;
+}
+
+.product-details button {
+	border-style: none;
+	padding: 20px 40px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	/* cursor: pointer; */
+}
+
+.product-details button:hover {
+	background-color: rgb(36, 35, 35);
 }
