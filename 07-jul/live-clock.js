@@ -1,5 +1,5 @@
 let heading = document.getElementsByTagName("h1")[0];
-heading.style.fontSize = '200px'
+heading.style.fontSize = '150px'
 heading.style.border = 'solid 5px black'
 heading.style.borderRadius = '20px'
 

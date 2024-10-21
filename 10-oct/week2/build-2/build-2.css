@@ -1,0 +1,32 @@
+.container {
+  background-color: rgb(217, 210, 210);
+  display: flex;
+}
+
+.item {
+  width: 300px;
+  margin: 10px;
+}
+
+.image {
+  background-color: white;
+  position: relative;
+}
+
+.image img{
+  width: 100%;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#second {
+  background-color: black;
+}
