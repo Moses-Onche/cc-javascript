@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.bracket-div {
+  /* border: solid; */
+  display: flex;
+  /* justify-content: start; */
+  /* align-items: start; */
+  /* padding: 0 1px; */
+  height: 250px;
+  width: 500px;
+}
+
+.bracket {
+  /* border: solid; */
+  font-size: 50px;
+  /* height: 50%; */
+}
+
+#main-text {
+  /* border: solid; */
+  /* font-size: 10px; */
+  width: 80%;
+  align-self: center;
+}
+
+#first {
+  align-self: start;
+  width: 10%;
+  text-align: center;
+}
+
+#last {
+  width: 10%;
+  align-self: end;
+  text-align: center;
+}
