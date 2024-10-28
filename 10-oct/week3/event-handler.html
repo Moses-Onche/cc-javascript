@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handlers and Listeners</title>
+  <style>
+    h3 {
+      font-size: 50px;
+      color: white;
+      background-color: red;
+      padding: 20px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body onload="alert('Loaded the page')" onunload="confirm('Are you sure you want to leave?')">
+  <h3 onclick="this.innerHTML = 'Hello!'">Click Me</h3>
+  <h3 onclick="changeText(this)">Click Me Too</h3>
+  <label for="name">Enter your name</label>
+  <input type="text" oninput="inputChange(this)" onchange="checkLength(this)">
+  <p></p>
+
+  <script>
+    function changeText(element){
+      element.innerHTML = "Hi, from a function";
+    }
+
+    function inputChange(element1){
+      let warning = document.querySelector("p");
+      if (element1.value.length < 8){
+        warning.innerHTML = "Password must be 8 characters long.";
+        warning.style.color = "red";
+      } else {
+        warning.innerHTML = "";
+      }
+    }
+
+    function checkLength(element1){
+      // console.log(element1.value.length);
+    }
+  </script>
+</body>
+</html>
