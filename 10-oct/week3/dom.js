@@ -4,6 +4,11 @@ let items = document.getElementById("list");
 let sub = document.getElementsByClassName("sub-heading");
 let paragraph = document.getElementsByTagName("p");
 
+// Using querySelector()
+let newHeading = document.querySelector("#main-heading");
+let newSub = document.querySelectorAll(".sub-heading");
+console.log(newSub[1]);
+
 // console.log(heading);
 heading.innerHTML = "Heading changed";
 // console.log(items.textContent);
