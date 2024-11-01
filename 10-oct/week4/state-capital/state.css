@@ -1,0 +1,29 @@
+body {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+#search {
+  font-size: large;
+}
+
+button {
+  font-size: large;
+}
+
+#dropdown {
+  margin-top: 10px;
+  max-width: 265px;
+  border: solid 0.5px rgb(228, 226, 226);
+  display: none;
+}
+
+#dropdown p {
+  padding: 0;
+  border-bottom: solid 0.5px rgb(228, 226, 226);
+}
+
+#dropdown p:last-child {
+  border-style: none;
+  margin-bottom: 0;
+}
