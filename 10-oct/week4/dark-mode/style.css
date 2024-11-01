@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  place-content: center;
+  transition: all 3s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40vh;
+}
+
+.case {
+  border: solid 1px;
+  border-radius: 50px;
+  width: 200px;
+  height: 80px;
+  margin: 0 20px;
+  padding: 5px;
+}
+
+.button {
+  transition: all 1s;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  float: left;
+}
