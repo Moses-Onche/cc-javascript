@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.tile {
+  border: solid;
+  width: 49%;
+  height: 50vh;
+  text-align: center;
+  font-size: 24px;
+}
+
+button {
+  position: absolute;
+  font-size: 40px;
+  padding: 20px 40px;
+  border-radius: 60px;
+  border-style: none;
+  background-color: black;
+  color: white;
+  top: 43vh;
+  left: 40%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(50, 50, 50);
+}
