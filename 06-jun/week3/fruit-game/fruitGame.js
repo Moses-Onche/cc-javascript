@@ -33,11 +33,12 @@ function move(){
   apple.style.top = num1 + '%';
   apple.style.left = num2 + '%';
 }
+
 // Increase score count when the fruit is clicked
 apple.addEventListener('click', function(){
-  scoreCount += 10;
-  if (scoreCount % 10 === 0){
-    speed -= 100;
+  scoreCount += 5;
+  if (scoreCount % 20 === 0){
+    speed -= 200;
   }
   displayScore.innerHTML = 'Score: ' + scoreCount;
 })
@@ -46,8 +47,18 @@ apple.addEventListener('click', function(){
 playArea.addEventListener('click', function(){
   lives--;
   displayLives.innerHTML += 'X ';
-  if (lives === 0){
-    alert('Game Over! Refresh the page to restart.\n\nScore: ' + scoreCount);
+
+  // Check if the player runs out of lives and
+  // Reset the scores and values
+  setTimeout(check, 1000);
+  function check(){
+    if (lives === 0){
+      alert('Game Over!\nScore: ' + scoreCount);
+      scoreCount = 0;
+      lives = 3;
+      displayLives.innerHTML = "";
+      displayScore.innerHTML = 'Score: ' + scoreCount;
+    }
   }
 });
 
